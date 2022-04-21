@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="LDL" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="logo">
+          <img width="200px" height="100px" src="img\logo-amvew-cropped.svg" />
+        </div>
+      </header>
+      <nav>
+        <ul class="menu-container">
+          <li class="menu-item">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="menu-item">
+            <a href="tips.html">Tips</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Contact</h2>
+        <p>Wil je meer informate over onze lespakketten, of direct een afspraak maken voor een proefles? Vul het formulier in en we nemen zo snel mogelijk contact met je op!</p>
+        <form name="contact-form" method="post" data-netlify="true">
+          <div class="form-container">
+            <div class="form-group">
+              <div class="form-field">
+                <label for="contact-name">Naam:</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="contact-name"
+                  placeholder="Vul je naam in"
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-email">E-mail:</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="contact-email"
+                  placeholder="Vul je e-mailadres in"
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-tel">Telefoonnummer:</label>
+                <input
+                  type="tel"
+                  id="contact-tel"
+                  name="contact-tel"
+                  placeholder="Vul je telefoonnummer in"
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-age">Leeftijd:</label>
+                <input
+                  type="number"
+                  id="contact-age"
+                  name="contact-age"
+                  value="18"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-field">
+                <label for="contact-gender">Geslacht:</label>
+                <div class="inline-field">
+                   <input
+                      type="radio"
+                      id="contact-gender-male"
+                      name="contact-gender"
+                      value="male"
+                    />
+                    <label for="contact-gender-male">Man</label>
+                    <input
+                      type="radio"
+                      id="contact-gender-female"
+                      name="contact-gender"
+                      value="female"
+                    />
+                    <label for="contact-gender-female">Vrouw</label>
+                </div>
+              </div>
+              <div class="form-field">
+                <p>Stuur me meer info over:</p>
+                <div class="inline-field">
+                  <input
+                    type="checkbox"
+                    id="contact-more-info"
+                    name="contact-more-info"
+                  />
+                  <label for="contact-more-info">Lespakketten</label>
+                  <input
+                    type="checkbox"
+                    id="contact-trial-lesson"
+                    name="contact-trial-lesson"
+                  />
+                  <label for="contact-trial-lesson">Proefles</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+                <label for="contact-msg">Opmerkingen:</label>
+                <textarea
+                  id="contact-msg"
+                  name="contact-msg"
+                  placeholder="Overige vragen en opmerkingen"
+                ></textarea>
+              </div>
+              <div class="inline-field">
+                <input type="reset" value="Leegmaken" />
+                <input type="submit" value="Verzenden" />
+              </div>
+            </div>
+        </form>
+      </main>
+      <footer class="footer">&copy; LDL 2022</footer>
+    </div>
+  </body>
+</html>

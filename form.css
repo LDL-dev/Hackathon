@@ -1,0 +1,70 @@
+.form-group {
+  display: grid;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.form-field {
+  background-color: #c8ffbe;
+  display: grid;
+}
+
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  background-color: #edffff;
+  border-radius: 0.25em;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, textarea:focus {
+  background-color: #ffff8a;
+  outline: none;
+  border: #008cff ridge 0.25em;
+}
+
+input[type="number"] {
+  width: 3em;
+}
+
+.inline-field {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inline-field input[type="checkbox"], input[type="radio"] {
+  margin-left: 1em;
+  margin-right: 0.25em;
+}
+
+.inline-field input[type="reset"], input[type="submit"] {
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: 0.25em;
+  background-color: #008cff;
+  background-color: darkred;
+  border-color: #008cff;
+  border: 3px  #008cff;
+  color: #ffff8a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .form-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
