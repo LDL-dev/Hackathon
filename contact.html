@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="LDL" />
+    <meta name="msapplication-TileColor" content="#98fb98">
+    <meta name="theme-color" content="#98fb98">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#777777">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -38,7 +45,11 @@
       </nav>
       <main>
         <h2>Contact</h2>
-        <p>Wil je meer informate over onze lespakketten, of direct een afspraak maken voor een proefles? Vul het formulier in en we nemen zo snel mogelijk contact met je op!</p>
+        <p>
+          Wil je meer informate over onze lespakketten, of direct een afspraak
+          maken voor een proefles? Vul het formulier in en we nemen zo snel
+          mogelijk contact met je op!
+        </p>
         <form name="contact-form" method="post" data-netlify="true">
           <div class="form-container">
             <div class="form-group">
@@ -83,20 +94,20 @@
               <div class="form-field">
                 <label for="contact-gender">Geslacht:</label>
                 <div class="inline-field">
-                   <input
-                      type="radio"
-                      id="contact-gender-male"
-                      name="contact-gender"
-                      value="male"
-                    />
-                    <label for="contact-gender-male">Man</label>
-                    <input
-                      type="radio"
-                      id="contact-gender-female"
-                      name="contact-gender"
-                      value="female"
-                    />
-                    <label for="contact-gender-female">Vrouw</label>
+                  <input
+                    type="radio"
+                    id="contact-gender-male"
+                    name="contact-gender"
+                    value="male"
+                  />
+                  <label for="contact-gender-male">Man</label>
+                  <input
+                    type="radio"
+                    id="contact-gender-female"
+                    name="contact-gender"
+                    value="female"
+                  />
+                  <label for="contact-gender-female">Vrouw</label>
                 </div>
               </div>
               <div class="form-field">
@@ -118,18 +129,18 @@
               </div>
             </div>
             <div class="form-field">
-                <label for="contact-msg">Opmerkingen:</label>
-                <textarea
-                  id="contact-msg"
-                  name="contact-msg"
-                  placeholder="Overige vragen en opmerkingen"
-                ></textarea>
-              </div>
-              <div class="inline-field">
-                <input type="reset" value="Leegmaken" />
-                <input type="submit" value="Verzenden" />
-              </div>
+              <label for="contact-msg">Opmerkingen:</label>
+              <textarea
+                id="contact-msg"
+                name="contact-msg"
+                placeholder="Overige vragen en opmerkingen"
+              ></textarea>
             </div>
+            <div class="inline-field">
+              <input type="reset" value="Leegmaken" />
+              <input type="submit" value="Verzenden" />
+            </div>
+          </div>
         </form>
       </main>
       <footer class="footer">Website &copy; LDL 2022</footer>
